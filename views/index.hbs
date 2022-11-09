@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    {{#each Products}}
+    <div class="col-md-4 mb-3 ">
+      <div class="card card-body">
+        {{!-- {{>productspartial}} --}}
+        <h5 class="card-title">{{title}}</h5>
+        <img src={{thumbnail}} class="card-img-top beerImgs" alt="{{title}}">
+        <p class="card-text">Price: {{price}}</p>
+        <a class="btn btn-primary" href="#" role="button">Buy</a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{{!--
+<div class="container mt-5"></div>
+{{#each Products}}
+<div class="container mt-5">
+  <h3>{{title}}</h3>
+  <img src="{{thumbnail}}" alt="img">
+  <a class="btn btn-primary" href="#" role="button">Buy</a>
+</div>
+{{/each}}
+</div> --}}
